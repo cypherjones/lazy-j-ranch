@@ -1,0 +1,286 @@
+
+/*
+Theme Name: Fit Mommy
+Theme URI: http://www.diaryofafitmommy.com/
+Description: Fit Mommy
+Version: 1.0
+Author: Beefy Marketing
+Author URI: http://beefymarketing.com
+*/
+ 
+@import url(css/gravity.css);
+@font-face {
+    font-family: 'industrybold';
+    src: url('fonts/Fort Foundry - Industry Bold-webfont.eot');
+    src: url('fonts/Fort Foundry - Industry Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Fort Foundry - Industry Bold-webfont.woff2') format('woff2'),
+         url('fonts/Fort Foundry - Industry Bold-webfont.woff') format('woff'),
+         url('fonts/Fort Foundry - Industry Bold-webfont.ttf') format('truetype'),
+         url('fonts/Fort Foundry - Industry Bold-webfont.svg#industrybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gearedslablight';
+    src: url('fonts/gearedslab-light-webfont.eot');
+    src: url('fonts/gearedslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gearedslab-light-webfont.woff2') format('woff2'),
+         url('fonts/gearedslab-light-webfont.woff') format('woff'),
+         url('fonts/gearedslab-light-webfont.ttf') format('truetype'),
+         url('fonts/gearedslab-light-webfont.svg#gearedslab') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gearedslab';
+    src: url('fonts/gearedslab-webfont.eot');
+    src: url('fonts/gearedslab-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gearedslab-webfont.woff2') format('woff2'),
+         url('fonts/gearedslab-webfont.woff') format('woff'),
+         url('fonts/gearedslab-webfont.ttf') format('truetype'),
+         url('fonts/gearedslab-webfont.svg#gearedslab') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* = What is "normal" anway?
+-------------------------------------------------------------- */
+
+html body {
+  color: #fff;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+section {
+    background-color: #fff;
+}
+
+a {
+  color: #03f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.col-md-6.left {
+  padding-left: 0;
+}
+.col-md-6.right {
+  padding-right: 0;
+}
+.center {
+  text-align: center;
+}
+.clear_right {
+  clear: right;
+}
+.no_pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.panel.left {
+  width: 25%;
+  margin: 0 auto;
+  float: left;
+}
+.panel.center {
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+.panel.right {
+  width: 21%;
+  margin: 0 auto;
+  float: left;
+}
+
+/* = WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float:right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/* = Make things wide 
+-------------------------------------------------------------- */
+
+header,
+section,
+footer {
+  /*max-width: 1800px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* = Leader board 
+-------------------------------------------------------------- */
+.leader-board.background {
+  background-image: url(img/top_background_texture.png);
+  height: 120px;
+}
+img.leader-board.logo {
+  position: relative;
+  z-index: 2;
+}
+/* = Nav
+-------------------------------------------------------------- */
+header .navbar.navbar-default {
+  background-image: url(img/nav_bar_background.png);
+  border: none;
+  border-radius: 0;
+  height: 40px;
+}
+header .navbar {
+  min-height: 40px;
+  margin-bottom: 0;
+}
+header .navbar-default .navbar-nav li a {
+  color: #000;
+  font-family: industrybold;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 15px 10px;
+}
+header .navbar-default .navbar-nav li:before {
+  color: #000;
+  content: "|";
+  font-family: industrybold;
+  position: absolute;
+  top: 8px;
+}
+header .navbar-default .navbar-nav li:first-child:before {
+  content: "";
+}
+header .nav.navbar-nav.navbar-left {
+  margin-left: 200px;
+}
+/* = Front Page Slider
+-------------------------------------------------------------- */
+/*---------- slider setup ----------*/
+#main-slider.m-slider.slick-slider {
+  margin-bottom: 0;
+}
+#main-slider.m-slider .slider-background {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: auto;
+}
+#main-slider.m-slider .slick-prev,
+#main-slider.m-slider .slick-next {
+  width: 26px;
+  height: 26px;
+}
+#main-slider.m-slider .slick-prev {
+  left: 25px;
+}
+#main-slider.m-slider .slick-next {
+  right: 25px;
+}
+#main-slider.m-slider .slick-prev:before,
+#main-slider.m-slider .slick-next:before {
+  font-size: 26px;
+}
+#main-slider.m-slider .slick-dots {
+  bottom: 0;
+}
+#main-slider.m-slider .slick-dots li button:before {
+  font-size: 12px;
+  opacity: 0.45;
+}
+/*----------  slider contents ----------*/
+#main-slider.m-slider .main-slider-content-box {
+  margin: 112px 0 0 34%;
+}
+#main-slider.m-slider .main-slider-title {
+  font-size: 65px;
+  font-family: industrybold;
+  text-transform: uppercase;
+}
+#main-slider.m-slider .main-slider-cta-box.btn {
+  border: 2px solid #fff;
+  border-radius: 0;
+  background: rgba(107,107,107,0.76);
+  width: 525px;
+}
+#main-slider.m-slider .main-slider-cta-box.btn a {
+  color: #fff;
+  font-family: 'gearedslablight';
+  font-size: 32px;
+}
+@media screen and (min-width: 1800px) {
+  #main-slider.m-slider .slider-background {
+    height: 100%;
+  }
+}
+/* = Front Page
+-------------------------------------------------------------- */
+/*---------- Wood Divider ----------*/
+#wood-divider.divider-background {
+  /*background-repeat: no-repeat;*/
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 35px;
+}
+
+
+
+/* = Test My Code
+-------------------------------------------------------------- */
+
+/* *{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
+
