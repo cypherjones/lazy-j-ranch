@@ -1,14 +1,26 @@
 
 /*
-Theme Name: Fit Mommy
-Theme URI: http://www.diaryofafitmommy.com/
-Description: Fit Mommy
+Theme Name: Lazy J Ranch
+Theme URI: http://www.lazyjranch.com/
+Description: Lazy J Ranch
 Version: 1.0
 Author: Beefy Marketing
 Author URI: http://beefymarketing.com
 */
  
 @import url(css/gravity.css);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,700);
+@font-face {
+    font-family: 'industrylight';
+    src: url('fonts/Fort Foundry - Industry Light-webfont.eot');
+    src: url('fonts/Fort Foundry - Industry Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Fort Foundry - Industry Light-webfont.woff2') format('woff2'),
+         url('fonts/Fort Foundry - Industry Light-webfont.woff') format('woff'),
+         url('fonts/Fort Foundry - Industry Light-webfont.ttf') format('truetype'),
+         url('fonts/Fort Foundry - Industry Light-webfont.svg#industrylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'industrybold';
     src: url('fonts/Fort Foundry - Industry Bold-webfont.eot');
@@ -17,6 +29,17 @@ Author URI: http://beefymarketing.com
          url('fonts/Fort Foundry - Industry Bold-webfont.woff') format('woff'),
          url('fonts/Fort Foundry - Industry Bold-webfont.ttf') format('truetype'),
          url('fonts/Fort Foundry - Industry Bold-webfont.svg#industrybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'industrymedium';
+    src: url('fonts/Fort Foundry - Industry Medium-webfont.eot');
+    src: url('fonts/Fort Foundry - Industry Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Fort Foundry - Industry Medium-webfont.woff2') format('woff2'),
+         url('fonts/Fort Foundry - Industry Medium-webfont.woff') format('woff'),
+         url('fonts/Fort Foundry - Industry Medium-webfont.ttf') format('truetype'),
+         url('fonts/Fort Foundry - Industry Medium-webfont.svg#industrymedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -185,7 +208,7 @@ header .navbar {
 }
 header .navbar-default .navbar-nav li a {
   color: #000;
-  font-family: industrybold;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   padding: 10px 15px 10px;
@@ -195,7 +218,7 @@ header .navbar-default .navbar-nav li:before {
   content: "|";
   font-family: industrybold;
   position: absolute;
-  top: 8px;
+  top: 10px;
 }
 header .navbar-default .navbar-nav li:first-child:before {
   content: "";
@@ -214,6 +237,7 @@ header .nav.navbar-nav.navbar-left {
   -webkit-background-size: cover;
   background-size: cover;
   height: auto;
+  max-height: 390px;
 }
 #main-slider.m-slider .slick-prev,
 #main-slider.m-slider .slick-next {
@@ -243,8 +267,9 @@ header .nav.navbar-nav.navbar-left {
 }
 #main-slider.m-slider .main-slider-title {
   font-size: 65px;
-  font-family: industrybold;
+  font-family: 'Montserrat', sans-serif;  
   text-transform: uppercase;
+  font-weight: 700;
 }
 #main-slider.m-slider .main-slider-cta-box.btn {
   border: 2px solid #fff;
@@ -254,8 +279,13 @@ header .nav.navbar-nav.navbar-left {
 }
 #main-slider.m-slider .main-slider-cta-box.btn a {
   color: #fff;
-  font-family: 'gearedslablight';
+  font-family: 'Cardo', serif;  
   font-size: 32px;
+}
+@media screen and (min-width: 1200px) {
+  #main-slider.m-slider .slider-background {
+    height: 47%;
+  }
 }
 @media screen and (min-width: 1800px) {
   #main-slider.m-slider .slider-background {
@@ -270,6 +300,98 @@ header .nav.navbar-nav.navbar-left {
   -webkit-background-size: cover;
   background-size: cover;
   height: 35px;
+}
+/*---------- Content ----------*/
+#content {
+  background-image: url(img/body_background.png);
+  min-height: 400px;
+}
+#content .promo-box .front-page-cta-form {
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 66px;
+}
+#content .front-page-cta-form {
+  height: 100px;
+  /*width: 800px;*/
+  /*margin: auto;*/
+}
+#content .connected-box {
+  margin-top: 20px;
+  margin-left: 45px;
+  font-family: industrymedium;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+/*---------- CTA Form ----------*/
+#content .connected-form {
+  margin-top: 15px;
+}
+#content .connected-form .gform_wrapper li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#content .connected-form .ginput_container input {
+  background-image: -webkit-linear-gradient(#4A4A43 0%, #5A5A4F 50%, #525246 100%);
+  background-image: -o-linear-gradient(#4A4A43 0%, #5A5A4F 50%, #525246 100%);
+  background-image: linear-gradient(#4A4A43 0%, #5A5A4F 50%, #525246 100%);
+  border-radius: 8px;
+  border: none; 
+}
+#content .connected-form .gform_button {
+  position: absolute;
+  top: 21px;
+  right: 51px;
+} 
+
+/* = Footer
+-------------------------------------------------------------- */
+.footer {
+  background-image: url(img/footer_background.png);
+}
+.footer ul#menu-left-footer-nav,
+.footer ul#menu-right-footer-nav {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+.footer ul#menu-left-footer-nav {
+  float: left;
+}
+.footer ul#menu-right-footer-nav {
+  float: right;
+}
+.footer ul#menu-left-footer-nav li,
+.footer ul#menu-right-footer-nav li {
+  display: inline-block;
+}
+.footer ul#menu-left-footer-nav li:after,
+.footer ul#menu-right-footer-nav li:after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer ul#menu-left-footer-nav li:last-child:after,
+.footer ul#menu-right-footer-nav li:last-child:after {
+  content: "";
+}
+.footer ul#menu-left-footer-nav li a,
+.footer ul#menu-right-footer-nav li a {
+  color: #fff;
+  font-family: industrybold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.footer .lazy-j-logo {
+  margin-top: 5px;
+}
+.footer .lazy-j-logo a {
+  color: #fff;
+  font-family: gearedslablight;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 29px;
+  text-shadow: 0px 1px 7px rgba(0,0,0,0.50);
 }
 
 

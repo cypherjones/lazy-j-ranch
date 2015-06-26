@@ -28,7 +28,9 @@
           </div>
           <div class="col-md-4">
             <div class="lazy-j-logo center">
-              Lazy J Ranch
+              <a href="<?php bloginfo( 'url' ); ?>">
+                Lazy J Ranch
+              </a>
             </div>
           </div>
           <div class="col-md-4">
