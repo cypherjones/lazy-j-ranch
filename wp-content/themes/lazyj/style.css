@@ -406,3 +406,259 @@ header .nav.navbar-nav.navbar-left {
 }*/
 
 
+argin-left: 45px;
+  font-family: industrymedium;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+/*---------- CTA Form ----------*/
+#content .connected-form {
+  margin-top: 15px;
+}
+#content .connected-form .gform_wrapper li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#content .connected-form .ginput_container input {
+  background-image: -webkit-linear-gradient(#4A4A43 0%, #5A5A4F 50%, #525246 100%);
+  background-image: -o-linear-gradient(#4A4A43 0%, #5A5A4F 50%, #525246 100%);
+  background-image: linear-gradient(#4A4A43 0%, #5A5A4F 50%, #525246 100%);
+  border-radius: 8px;
+  border: none; 
+}
+#content .connected-form .gform_button {
+  position: absolute;
+  top: 21px;
+  right: 51px;
+}
+@media screen and (min-width: 768px) {
+  #content,
+  .content {
+    min-height: 503px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  } 
+  .content .main-heading {
+    text-align: left;
+  }
+ } 
+/* = About Page
+-------------------------------------------------------------- */
+.main-heading h1,
+.sub-content h3,
+.sub-content-title {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.main-content img.main-content-img {
+  width: 100%;
+}
+.main-content ul {
+  padding-left: 0;
+  list-style: none;
+}
+.main-content ul li {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.main-content ul li i {
+  font-size: 14px;
+}
+.sub-content-copy {
+  margin-top: 20px; 
+}
+.sub-content-title,
+.sub-content-copy,
+.sub-content-img {
+  margin-top: 15px; 
+}
+.sub-content-right .sub-content-copy {
+  margin-bottom: 20px;
+}
+
+/* = Stay Connected (sidebar)
+-------------------------------------------------------------- */
+.stay-connected {
+  background-image: url(img/about_stay_connected.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.stay-connected .stay-connected-title {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.stay-connected .stay-connected-title h3 {
+  margin-top: 5px;
+}
+.stay-connected-form #gform_submit_button_1 {
+  background-image: linear-gradient(-180deg, #DFDFDF 0%, #C2C2C2 50%, #D6D6D6 100%);
+  border-radius: 4px;
+  font-size: 18px;
+  color: #4A4A43;
+  line-height: 21px;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* = FAQ's
+-------------------------------------------------------------- */
+.faqs ul {
+  padding-left: 0;
+  list-style: none;
+}
+.faqs ul li {
+  padding-bottom: 10px;
+}
+/* = Buy Cta
+-------------------------------------------------------------- */
+.buy-cta-title h1,
+.buy-cta-button.btn a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+#buy-cta {
+  background-image: linear-gradient(-180deg, #D7D7D7 0%, #9C9C9C 100%);
+  box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.50), 
+  inset 1px 3px 10px 0px rgba(0,0,0,0.50);
+  height: 125px;
+}
+.buy-cta-title h1 {
+  font-size: 20px;
+  color: #292827;
+}
+.buy-cta-img {
+  margin-top: 30px;
+}
+.buy-cta-button.btn {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  border: none;
+  border-radius: 0;
+  padding: 6px 24px;
+}
+.buy-cta-button.btn a {
+  color: #000;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .buy-cta-title h1 {
+    font-size: 40px;
+    line-height: 63px;
+  }
+  .buy-cta-button.btn a {
+    font-size: 20px;
+  }
+  #buy-cta {
+    height: 166px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .buy-cta-title h1 {
+    font-size: 48px;
+  }
+}
+/* = Lodging Page
+-------------------------------------------------------------- */
+.panel-box {
+  background-image: -webkit-linear-gradient(#DBDBDB 0%, #EEEEEE 48%, #ABABAB 99%);
+  background-image: -o-linear-gradient(#DBDBDB 0%, #EEEEEE 48%, #ABABAB 99%);
+  background-image: linear-gradient(#DBDBDB 0%, #EEEEEE 48%, #ABABAB 99%);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.50);
+  color: #000;
+  margin-bottom: 40px;
+}
+.panel-img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.panel-img img {
+  width: 100%;
+}
+.panel-content h3 {
+  margin-top: 28px;
+}
+@media screen and (min-width: 768px) {
+  .panel-box.button.btn {
+    margin-bottom: 10px;
+  }
+}
+/* = Gallery Page
+-------------------------------------------------------------- */
+.gallery-img img {
+  width: 100%;
+}
+/* = Footer
+-------------------------------------------------------------- */
+.footer {
+  background-image: url(img/footer_background.png);
+}
+.footer ul#menu-left-footer-nav,
+.footer ul#menu-right-footer-nav {
+  padding-left: 0;
+  list-style: none;
+}
+.footer ul#menu-left-footer-nav,
+.footer ul#menu-right-footer-nav {
+  text-align: center;
+}
+.footer ul#menu-left-footer-nav li,
+.footer ul#menu-right-footer-nav li {
+  display: inline-block;
+}
+.footer ul#menu-left-footer-nav li:after,
+.footer ul#menu-right-footer-nav li:after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer ul#menu-left-footer-nav li:last-child:after,
+.footer ul#menu-right-footer-nav li:last-child:after {
+  content: "";
+}
+.footer ul#menu-left-footer-nav li a,
+.footer ul#menu-right-footer-nav li a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.footer .lazy-j-logo {
+  margin: 17px auto;
+  width: 32%;
+}
+.footer .lazy-j-logo a {
+  color: #fff;
+  font-family: gearedslablight;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 29px;
+  text-shadow: 0px 1px 7px rgba(0,0,0,0.50);
+}
+@media screen and (min-width: 768px) {
+  .footer ul#menu-left-footer-nav {
+    float: left;
+  }
+  .footer ul#menu-right-footer-nav {
+    float: right;
+  }
+  .footer ul#menu-left-footer-nav,
+  .footer ul#menu-right-footer-nav {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 35px;
+  }
+}
+
+
+
+/* = Test My Code
+-------------------------------------------------------------- */
+
+/* *{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
+
