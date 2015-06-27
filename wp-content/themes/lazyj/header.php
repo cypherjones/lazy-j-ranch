@@ -120,3 +120,30 @@
       </div><!-- /.container -->
     </nav>
   </header>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <?php 
+          wp_nav_menu( array(
+                  'menu'              => 'menu',
+                  'theme_location'    => 'main-nav',
+                  'depth'             => 2,
+                  'container'         => 'div',
+                  'container_class'   => 'navbar-collapse collapse',
+                  'container_id'      => 'navbar',
+                  'menu_class'        => 'nav navbar-nav navbar-left',
+                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                  'walker'            => new wp_bootstrap_navwalker())
+              );
+
+         ?>
+      </div><!-- /.container -->
+    </nav>
+  </header>
